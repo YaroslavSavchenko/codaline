@@ -10,7 +10,11 @@
 	font-size:15px;
 	padding:0px!important;
 	
-	
+}
+.form-style{
+	width:350px !important;
+	margin:0!important;
+	padding:0 !important;
 }
 .panel{
 	margin:0 !important;
@@ -144,6 +148,4 @@ h4.displBlock{
 	margin:10px;
 	
 }
-.text-game p{
-	
-}
+
