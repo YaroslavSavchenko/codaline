@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>glavna</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>   
+<body>
+<div class="content container ">
+<form action="" method="post" name="user" class="navbar-form navbar-left ">
+<fieldset>
+
+  <div class="form-group">
+    <p>Введіть ім'я: <br><input type="text" name="name" class="style-form-reg form-control " placeholder="Ім'я"></p>
+    <p>Введіть пароль: <br><input type="password" name="password" class="form-control style-form-reg" placeholder="Пароль"></p>
+  </div>
+  <p><button type="submit" name="submit" class="btn btn-default">Увійти</button> <button type="submit" name="registration" class="btn style-btn btn-default">Зареєструватися</button></p>
+  </fieldset>
+</form>
+
+
+<h4>Як грати?</h4>
+<p>Необхідно створити направлені потоки на ігровому полі. Напрямок потоку визначається стрілочками, які додаються в потік.  <br> Одна з властивостей потоку - відсутність розгалужень.
+<br>Основна задача в грі - користуючись властивостями потоку робити все можливе на полі, 
+щоб заважати боту та аби останній хід був за тобою!
+<br>Перемагає той, хто робить останній хід!</p>
+</div>
+<div class="text-info">
+
+<script type="text/jscript">
+function displ(){
+	var none = document.getElementsByClassName('displNone');
+	var block = document.getElementsByClassName('displBlock');
+	var a1 = document.getElementsByClassName('a1');
+	for(var i = 0; i<none.length-6; i++){
+	 if(none[i].style.display = "none")none[i].style.display = "block";
+	 for(var j = 0; j<block.length; j++){
+		 if(block[i].style.display = "block")block[i].style.display = "none";
+		 }
+	}
+}
+</script>
+	
+<h4 class="displBlock">Початок гри </h4> <input type="button" name="click"  class="bat-text-info" onclick="displ()" value="Далі">
+
+<p class="displBlock">Постав першу стрілочку. <br> Керувати напрямком стрілочки можна повторно клацнувши на неї.<br> 
+Стрілочки розрізняються двома кольорами. Щоб зробити хід натисніть <strong>ПРОБІЛ</strong>
+</p>
+
+<h4 class="displNone a1">Прибрати стрілку</h4>
+<p class="displNone a1">Прибрати стрілочку можна повторним натисканням на неї, або якщо натиснути курсором в іншому місці поля</p>
+
+<h4 class="displNone a1">Робот</h4>
+<p class="displNone a1">Робот робить почергово свій хід після вашого ходу. Передбачити його хід майже неможливо</p>
+
+<h4 class="displNone a1">Завершення гри</h4>
+<p class="displNone a1">Завершити гру можна натиснувши кнопку "Здатися і завершити гру". Натиснувши цю кнопку результат гри буде записаний і опублікований на сайті автоматично. Кнопка з'явиться під час гри</p>
+
+<h4 class="displNone a1">Способи ходу</h4>
+<p class="displNone a1">Якщо бажаєте ходити натискаючи кнопку "Зробити хід", натисніть ENTER. Повторне натискання сховає кнопку</p>
+</div>
+
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
