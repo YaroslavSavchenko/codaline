@@ -19,6 +19,10 @@
 .panel{
 	margin:0 !important;
 }
+
+.panel-form2{
+	width:500px;
+}
 .panel-heading a{
 	display:block;
 	margin-bottom:10px; 
