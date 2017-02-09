@@ -13,9 +13,9 @@
     <![endif]-->
 </head>   
 <body>
-<div class="content container boxs-sh">
+<div class="content container">
 	    
-        <div id="loginbox" style="margin-top:0px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 form-style">                    
+        <div id="loginbox" style="margin-top:0px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 form-style boxs-sh">                    
             <div class="panel panel-info" >
                     <div class="panel-heading">
                         <div class="panel-title">Sign In</div>
@@ -62,11 +62,20 @@
 
                                 <div class="form-group">
                                     <div class="col-md-12 control">
+									
                                         <div style="border-top: 1px solid#888; padding-top:15px; font-size:85%" >
-                                             
-                                        <a href="#" onClick="$('#loginbox').hide(); $('#signupbox').show()">
+											<script type="text/javascript"> 
+											 function log_box(){
+												 var loginbox = document.getElementById("loginbox"); 
+												 var textClick = document.getElementById("textClick"); 
+												if (loginbox.style.display = "none") textClick.style.margin = "0 0 0 438px";
+												
+												}
+											</script>
+										<a href="#" onClick="$('#loginbox').hide();log_box(); $('#signupbox').show()">
                                             Зареєструватися
                                         </a>
+											
                                         </div>
                                     </div>
                                 </div>    
@@ -78,13 +87,21 @@
                     </div>  
         </div>
 																				<!-- Form 2 -->
-        <div id="signupbox" style="display:none; margin-top:0px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 content form-style">
-                    <div class="panel panel-info panel-form2">
+        <div class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 content form-style " >
+                    <div id="signupbox" style="display:none; margin-top:0px;" class="panel panel-info panel-form2 boxs-sh">
                         <div class="panel-heading">
                             <div class="panel-title">Реєстрація</div>
-                            <div style="float:right; font-size: 85%; position: relative; top:-20px"><a id="signinlink" href="#" onclick="$('#signupbox').hide(); $('#loginbox').show()">Повернутися</a></div>
+							<script type="text/javascript"> 
+											 function sign_box(){
+												 var signupbox = document.getElementById("signupbox"); 
+												 var textClick = document.getElementById("textClick"); 
+												if (signupbox.style.display = "none") textClick.style.margin = "auto";
+												
+												}
+											</script>
+		                <div style="float:right; font-size: 85%; position: relative; top:-20px"><a id="signinlink" href="#" onclick="$('#signupbox').hide();sign_box(); $('#loginbox').show()">Повернутися</a></div>
                         </div>  
-                        <div class="panel-body" >
+                        <div class="panel-body " >
                             <form id="signupform" class="form-horizontal" role="form">
                                 
                                 <div id="signupalert" style="display:none" class="alert alert-danger">
@@ -127,24 +144,19 @@
                                     </div>
                                 </div>
 
-                                <div class="form-group">
+                                <div class="form-group" style="margin-bottom:0;">
                                     <!-- Button -->                                        
-                                    <div class="col-md-offset-3 col-md-9">
+                                    <div class="col-md-offset-3 col-md-9 " style="padding:0; width:100%; margin:0; text-align:center;">
                                         <button id="btn-signup" type="button" class="btn btn-info"><i class="icon-hand-right"></i> Зареєструватися</button>
-                                        <span style="margin-left:8px;">or</span>  
+                                         
                                     </div>
                                 </div>
+                                <p style="margin:5px auto; text-align:center;">Або </p>
                                 
-                                <div style="border-top: 1px solid #999; padding-top:20px"  class="form-group">
-                                    
-                                    <div class="col-md-offset-3 col-md-9">
-                                        <button id="btn-fbsignup" type="button" class="btn btn-primary"><i class="icon-facebook"></i> Реєстрація чере Facebook</button>
+                                    <div class="col-md-offset-3 col-md-9" style="margin:0 auto 20px auto; text-align:center; width:100%;">
+                                        <button id="btn-fbsignup" type="button" class="btn btn-primary"><i class="icon-facebook"></i> Реєстрація через Facebook</button>
                                     </div>                                           
-                                        
-                                </div>
-                                
-                                
-                                
+                                                                                                                        
                             </form>
                          </div>
                     </div>
@@ -156,7 +168,7 @@
     
     
 </div>
-<div class="content container text-game">
+<div id="textClick" class="content container text-game">
 <h4>Як грати?</h4>
 <p>Необхідно створити направлені потоки на ігровому полі. Напрямок потоку визначається стрілочками, які додаються в потік.  <br> Одна з властивостей потоку - відсутність розгалужень.
 <br>Основна задача в грі - користуючись властивостями потоку робити все можливе на полі, 
@@ -165,7 +177,7 @@
 </div>
 <div class="text-info">
 
-<script type="text/jscript">
+<script type="text/javascript">
 function displ(){
 	var none = document.getElementsByClassName('displNone');
 	var block = document.getElementsByClassName('displBlock'); 
