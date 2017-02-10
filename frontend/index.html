@@ -13,10 +13,10 @@
     <![endif]-->
 </head>   
 <body>
-<div class="content container">
+<div class="content container ">
 	    
-        <div id="loginbox" style="margin-top:0px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 form-style boxs-sh">                    
-            <div class="panel panel-info" >
+        <div id="loginbox" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 form-style ">                    
+            <div class="panel panel-info boxs-sh" >
                     <div class="panel-heading">
                         <div class="panel-title">Sign In</div>
                         <div style="float:right; font-size: 80%; position: relative; top:-18px"><a href="#">Забули пароль?</a></div>
@@ -64,15 +64,8 @@
                                     <div class="col-md-12 control">
 									
                                         <div style="border-top: 1px solid#888; padding-top:15px; font-size:85%" >
-											<script type="text/javascript"> 
-											 function log_box(){
-												 var loginbox = document.getElementById("loginbox"); 
-												 var textClick = document.getElementById("textClick"); 
-												if (loginbox.style.display = "none") textClick.style.margin = "0 0 0 438px";
-												
-												}
-											</script>
-										<a href="#" onClick="$('#loginbox').hide();log_box(); $('#signupbox').show()">
+											
+										<a href="#" onClick="$('#loginbox').hide(); $('#signupbox').show()">
                                             Зареєструватися
                                         </a>
 											
@@ -87,19 +80,12 @@
                     </div>  
         </div>
 																				<!-- Form 2 -->
-        <div class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 content form-style " >
-                    <div id="signupbox" style="display:none; margin-top:0px;" class="panel panel-info panel-form2 boxs-sh">
+        <div class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 content form-style "   >
+                    <div id="signupbox" style="display:none;" class="panel panel-info panel-form2 boxs-sh">
                         <div class="panel-heading">
                             <div class="panel-title">Реєстрація</div>
-							<script type="text/javascript"> 
-											 function sign_box(){
-												 var signupbox = document.getElementById("signupbox"); 
-												 var textClick = document.getElementById("textClick"); 
-												if (signupbox.style.display = "none") textClick.style.margin = "auto";
-												
-												}
-											</script>
-		                <div style="float:right; font-size: 85%; position: relative; top:-20px"><a id="signinlink" href="#" onclick="$('#signupbox').hide();sign_box(); $('#loginbox').show()">Повернутися</a></div>
+							
+		                <div style="float:right; font-size: 85%; position: relative; top:-20px"><a id="signinlink" href="#" onclick="$('#signupbox').hide(); $('#loginbox').show()">Повернутися</a></div>
                         </div>  
                         <div class="panel-body " >
                             <form id="signupform" class="form-horizontal" role="form">
