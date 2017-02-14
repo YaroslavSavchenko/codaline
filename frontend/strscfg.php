@@ -1,0 +1,1 @@
+﻿<script type="text/javascript" src="strscfg.js"></script>

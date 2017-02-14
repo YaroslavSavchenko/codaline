@@ -1,0 +1,1144 @@
+#base input{
+
+width:25px;
+
+}
+
+button{
+
+background-image:url("http://streams.url.ph/butbg.png");
+
+}
+
+button:hover{
+
+box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+}
+
+#mainlogo{
+
+	width:348px;
+
+	height:55px;
+
+	margin-top:10px;
+
+	margin-bottom:10px;
+
+	margin-left:0px;
+
+	padding:0px;
+
+	background-image:url("http://streams.url.ph/streams.png");
+
+}
+
+#infoscreen{
+
+	margin-top:10px;
+
+	padding:10px;
+
+	width:325px;
+
+	height:375px;
+
+	background:none;
+
+	color:black;
+
+	border-radius:5px 5px 5px 5px;
+
+	border:2px solid #0505c3;
+
+	overflow:auto;
+
+}
+
+#time{width:35px;}
+
+#numg{
+
+font-size:16px;
+
+margin-top:5px;
+
+margin-bottom:5px;
+
+}
+
+#numg:hover{text-shadow: 0 0 3px rgba(0,0,0,0.5);}
+
+#panel{
+
+font-size:12px;
+
+width:100%;
+
+border-bottom:2px solid #0505c3;
+
+}
+
+#panel:hover{
+
+color:white;
+
+box-shadow: 0 0 5px rgba(0,0,0,0.5);
+
+cursor:pointer;
+
+/*background-image:url("http://streams.url.ph/butbg.png");*/
+
+background:#0505c3;
+
+}
+
+#end{
+
+display:none;
+
+}
+
+#messages{
+
+	width:800px;
+
+	height:495px;
+
+	overflow:auto;
+
+	border:1px solid silver;
+
+	display:none;
+
+}
+
+#screen{
+
+display:none;
+
+}
+
+
+
+#dbutt{
+
+display:none;
+
+}
+
+#err{
+
+position:fixed;
+
+left:20px;
+
+bottom: 20px;
+
+width:180px;
+
+height:62px;
+
+font-size:16px;
+
+color:black;
+
+border-radius:6px 6px 6px 6px;
+
+border:2px solid #f2c320;
+
+display:none;
+
+background:#f8d55a;
+
+opacity: 0.9;
+
+box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+}
+
+
+
+#autoerr{
+
+position:fixed;
+
+left:20px;
+
+bottom: 20px;
+
+width:180px;
+
+height:62px;
+
+font-size:16px;
+
+color:black;
+
+border-radius:6px 6px 6px 6px;
+
+border:2px solid #f2c320;
+
+display:none;
+
+background:#f8d55a;
+
+opacity: 0.9;
+
+box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+}
+
+#si1{display:none;}
+
+#si2{display:none;}
+
+#si3{display:none;}
+
+#si4{display:none;}
+
+#si5{display:none;}
+
+#nextinfo{
+
+position:relative;
+
+margin-left:5px;
+
+margin-bottom:0px;
+
+float:right;
+
+width:120px;
+
+height:22px;
+
+font-size:16px;
+
+border-radius:6px 6px 6px 6px;
+
+border:1px solid #f2c320;
+
+}
+
+#nextinfo:hover{
+
+cursor:pointer;
+
+}
+
+.infoblock br{
+
+height:10px;
+
+}
+
+.infoblock{
+
+position:fixed;
+
+left:20px;
+
+bottom: 20px;
+
+width:280px;
+
+height:170px;
+
+font-size:16px;
+
+color:black;
+
+border-radius:6px 6px 6px 6px;
+
+border:2px solid #f2c320;
+
+display:none;
+
+background:#f8d55a;
+
+opacity: 0.9;
+
+padding:10px;
+
+box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+}
+
+
+
+#err td{
+
+width:175px;
+
+height:16px;
+
+}
+
+#autoerr td{
+
+width:175px;
+
+height:16px;
+
+}
+
+#gotogame{
+
+	width:348px;
+
+	height:55px;
+
+	font-size:28px;
+
+	text-transform:uppercase;
+
+	border-top:2px solid #0505c3;
+
+	border-bottom:2px solid #0505c3;
+
+	border-left:2px solid #0505c3;
+
+	border-right:2px solid #0505c3;
+
+	border-radius:5px 5px 5px 5px;
+
+	color:white;
+
+	background:blue;
+
+	text-shadow:2px 2px grey;
+
+	margin-top:10px;
+
+	margin-bottom:10px;
+
+	margin-left:0px;
+
+	padding:0px;
+
+	/*background-image:url("http://streams.url.ph/butbg.png");*/
+
+}
+
+#gotomain{
+
+	width:325px;
+
+	height:39px;
+
+	font-size:24px;
+
+	border-top:2px solid #0505c3;
+
+	border-bottom:2px solid #0505c3;
+
+	border-left:2px solid #0505c3;
+
+	border-right:2px solid #0505c3;
+
+	border-radius:5px 5px 5px 5px;
+
+	color:white;
+
+	background:blue;
+
+	text-shadow:1px 1px grey;
+
+	margin-top:10px;
+
+	margin-bottom:10px;
+
+	margin-left:0px;
+
+	padding:0px;
+
+}
+
+#gotomain:hover{cursor:pointer;}
+
+#gotogame:hover{
+
+cursor:pointer;
+
+box-shadow: 0 0 15px rgba(0,0,0,0.5);
+
+}
+
+#bbr{
+
+height:59px;
+
+}
+
+#main{
+
+	width:720px;
+
+	
+
+	margin:20px auto;
+
+	background:#f6e7b2;
+
+	background-image:url("bg.png");
+
+}
+
+#gbody{
+ width:370px;
+ margin:0 auto;
+}
+
+#gamepage{
+
+	width:100%;
+
+	margin:20px auto;
+
+	margin-bottom:0px;
+
+	background: #f6e7b2;
+
+}
+
+
+
+input{
+
+width:50px;
+
+}
+
+#about{
+
+	padding:10px;
+
+	width:325px;
+
+	height:375px;
+
+	background:none;
+
+	color: #0505c3;
+
+	font-size:18px;
+
+	/*text-shadow:1px 1px grey;*/
+
+	border-radius:5px 5px 5px 5px;
+
+	border:2px solid #0505c3;
+
+}
+
+#tablo{
+
+	width:362px;
+
+	height:60px;
+
+	background:none;
+
+	text-shadow:0px 0px grey;
+
+	border-radius:5px 5px 5px 5px;
+
+	border:3px solid #f8d55a;
+
+	margin-bottom:10px;
+
+	margin-top:5px;
+
+}
+
+#finfo{
+
+	background:none;
+
+	width:180px;
+
+	height:15px;
+
+	border:0px;
+
+	font-size:12px;
+
+	text-align: center;
+
+	color:black;
+
+}
+
+#sinfo{
+
+	background:none;
+
+	width:180px;
+
+	height:15px;
+
+	border:0px;
+
+	font-size:12px;
+
+	text-align: center;
+
+	color:black;
+
+}
+
+#fPbut{
+
+	background:none;
+
+	width:180px;
+
+	height:40px;
+
+	text-shadow:0px 0px grey;
+
+	border:0px;
+
+	font-size:26px;
+
+	text-align: center;
+
+	color:blue;
+
+}
+
+#sPbut{
+
+	background:none;
+
+	width:180px;
+
+	height:40px;
+
+	text-shadow:0px 0px grey;
+
+	border:0px;
+
+	font-size:26px;
+
+	text-align: center;
+
+	color:red;
+
+}
+
+#fscore{
+
+	background:none;
+
+	width:180px;
+
+	height:55px;
+
+	text-shadow:1px 1px orange;
+
+	border:0px;
+
+	font-size:45px;
+
+	text-align: center;
+
+	color:red;
+
+}
+
+#sscore{
+
+	background:none;
+
+	width:180px;
+
+	height:55px;
+
+	text-shadow:1px 1px orange;
+
+	border:0px;
+
+	font-size:45px;
+
+	text-align: center;
+
+	color:red;
+
+}
+
+
+
+#startgame{
+
+	width:350px;
+
+	
+
+}
+
+#game{
+
+	width:324px;
+
+	height:38px;
+
+	font-size:24px;
+
+	border-top:1px solid #0505c3;
+
+	border-bottom:2px solid #0505c3;
+
+	border-left:2px solid #0505c3;
+
+	border-right:2px solid #0505c3;
+
+	border-radius:0px 0px 5px 5px;
+
+	color:white;
+
+	background:blue;
+
+	text-shadow:1px 1px grey;
+
+	margin-top:0px;
+
+	margin-bottom:10px;
+
+	margin-left:0px;
+
+	padding:0px;
+
+	display:none;
+
+}
+
+#gamenot{
+
+	width:320px;
+
+	height:35px;
+
+	font-size:25px;
+
+	border-top:1px solid #0505c3;
+
+	border-bottom:2px solid #0505c3;
+
+	border-left:2px solid #0505c3;
+
+	border-right:2px solid #0505c3;
+
+	border-radius:0px 0px 5px 5px;
+
+	color:#8986d0;
+
+	background:none;
+
+	text-align:center;
+
+	text-shadow:1px 1px grey;
+
+	margin-top:0px;
+
+	margin-bottom:10px;
+
+	margin-left:0px;
+
+	padding:0px;
+
+}
+
+#game:hover{
+
+background: #0505c3;
+
+cursor:pointer;
+
+}
+
+/* padding:0px 0px 0px 0px; */
+
+#finput{
+
+	text-align: center;
+
+	width:159px;
+
+	height:29px;
+
+	font-size:16px;
+
+	color:#c1c1c1;
+
+	background:white;
+
+	text-shadow:0px 0px grey;
+
+	border-radius:5px 0px 0px 5px;
+
+	border-left:2px solid #f8d55a;
+
+	border-right:1px solid #f8d55a;
+
+	border-top:2px solid #f8d55a;
+
+	border-bottom:2px solid #f8d55a;
+
+}
+
+#sinput{
+
+	text-align: center;
+
+	width:159px;
+
+	height:29px;
+
+	font-size:16px;
+
+	color:#c1c1c1;
+
+	background:white;
+
+	text-shadow:0px 0px grey;
+
+	border-radius:0px 5px 5px 0px;
+
+	border-left:1px solid #f8d55a;
+
+	border-right:2px solid #f8d55a;
+
+	border-top:2px solid #f8d55a;
+
+	border-bottom:2px solid #f8d55a;
+
+}
+
+
+
+#fplayer{
+
+	text-align: center;
+
+	width:320px;
+
+	height:29px;
+
+	font-size:17px;
+
+	color: #0505c3;
+
+	background:white;
+
+	text-shadow:0px 0px silver;
+
+	border-radius:5px 5px 0px 0px;
+
+	border-left:2px solid #0505c3;
+
+	border-right:2px solid #0505c3;
+
+	border-top:2px solid #0505c3;
+
+	border-bottom:1px solid #0505c3;
+
+}
+
+#splayer{
+
+	text-align: center;
+
+	width:159px;
+
+	height:29px;
+
+	font-size:17px;
+
+	color: #0505c3;
+
+	background:white;
+
+	text-shadow:0px 0px silver;
+
+	border-radius:0px 5px 0px 0px;
+
+	border-left:1px solid #0505c3;
+
+	border-right:2px solid #0505c3;
+
+	border-top:2px solid #0505c3;
+
+	border-bottom:1px solid #0505c3;
+
+}
+
+
+
+.cancel{
+
+width:348px;
+
+height:40px;
+
+font-size:24px;
+
+text-transform:uppercase;
+
+border-top:2px solid silver;
+
+border-left:2px solid silver;
+
+border-right:2px solid silver;
+
+border-bottom:2px solid silver;
+
+border-radius:5px 5px 0px 0px;
+
+}
+
+.cancel:hover{
+
+cursor:pointer;
+
+background:white;
+
+}
+
+.cancel:active{
+
+font-size:26px;
+
+}
+
+.finish{
+
+width:368px;
+
+height:66px;
+
+text-shadow:0px 0px grey;
+
+border-radius:5px 5px 5px 5px;
+
+border:3px solid #f8d55a;
+
+margin-bottom:10px;
+
+margin-top:5px;
+
+font-size:20px;
+
+text-transform:uppercase;
+
+background:#f2c320;
+
+margin-top:15px;
+
+}
+
+.finish:hover{
+
+cursor:pointer;
+
+color:white;
+
+}
+
+.finish:active{
+
+background:none;
+
+}
+
+#fl{
+
+	background:url('fleft.png');
+
+	border: 0px solid black;
+
+	width:30px;
+
+	height:6px;
+
+	border-spacing:0px;
+
+	border-collapse:collapse;
+
+	/*background:yellow;*/
+
+}
+
+#fr{
+
+	background:url('fright.png');
+
+	border: 0px solid black;
+
+	width:30px;
+
+	height:6px;
+
+	border-spacing:0px;
+
+	border-collapse:collapse;
+
+	/*background:yellow;*/
+
+}
+
+#fu{
+
+	background:url('fup.png');
+
+	border: 0px solid black;
+
+	width:6px;
+
+	height:30px;
+
+	border-spacing:0px;
+
+	border-collapse:collapse;
+
+	/*background:yellow;*/
+
+}
+
+#fd{
+
+	background:url('fdown.png');
+
+	border: 0px solid black;
+
+	width:6px;
+
+	height:30px;
+
+	border-spacing:0px;
+
+	border-collapse:collapse;
+
+	/*background:yellow;*/
+
+}
+
+
+
+#sl{
+
+	background:url('sleft.png');
+
+	border: 0px solid black;
+
+	width:30px;
+
+	height:6px;
+
+	border-spacing:0px;
+
+	border-collapse:collapse;
+
+	/*background:orange;*/
+
+}
+
+#sr{
+
+	background:url('sright.png');
+
+	border: 0px solid black;
+
+	width:30px;
+
+	height:6px;
+
+	border-spacing:0px;
+
+	border-collapse:collapse;
+
+	/*background:orange;*/
+
+}
+
+#su{
+
+	background:url('sup.png');
+
+	border: 0px solid black;
+
+	width:6px;
+
+	height:30px;
+
+	border-spacing:0px;
+
+	border-collapse:collapse;
+
+	/*background:orange;*/
+
+}
+
+#sd{
+
+	background:url('sdown.png');
+
+	border: 0px solid black;
+
+	width:6px;
+
+	height:30px;
+
+	border-spacing:0px;
+
+	border-collapse:collapse;
+
+	/*background:orange;*/
+
+}
+
+
+
+.field{
+
+	border: 0px solid black;
+
+	width:;
+
+	height:;
+
+	border-spacing:0px;
+
+	border-collapse:collapse;
+
+}
+
+/* лінії */
+
+.hb{
+
+	border: 0px solid black;
+
+	width:6px;
+
+	height:6px;
+
+	border-spacing:0px;
+
+	border-collapse:collapse;
+
+	background:#f8d55a;
+
+}
+
+.hf{
+
+	border: 0px solid black;
+
+	width:30px;
+
+	height:6px;
+
+	border-spacing:0px;
+
+	border-collapse:collapse;
+
+	background:#f8d55a;
+
+}
+
+/* поля */
+
+.vb{
+
+	border: 0px solid black;
+
+	width:6px;
+
+	height:30px;
+
+	border-spacing:0px;
+
+	border-collapse:collapse;
+
+	background:#f8d55a;
+
+}
+
+.vf{
+
+	border: 0px solid black;
+
+	width:30px;
+
+	height:30px;
+
+	border-spacing:0px;
+
+	border-collapse:collapse;
+
+	background:none;
+
+}
+
+.vb:hover{
+
+cursor:pointer;
+
+background:white;
+
+}
+
+.hf:hover{
+
+cursor:pointer;
+
+background:white;
+
+}
+
+
+
+#youwin{
+
+	display:none;
+
+	width:100%;
+
+	height:100%;
+
+	position:fixed;
+
+	top:0px;
+
+	left:0px;
+
+	opacity:0.95;
+
+	background:white;
+
+}
+
+#youwin table{
+
+	width:100%;
+
+	height:100%;
+
+}
+
+#youwin td{
+
+	width:100%;
+
+	height:100%;
+
+	text-align:center;
+
+	font-size: 30px;
+
+	color:black;
+
+}
